@@ -354,6 +354,7 @@ header .container div.form{
 /* end portfolio */
 /*video*/
 .video {
+  margin: 100px 0;
   position: relative;
 }
 .video::before {
@@ -395,8 +396,398 @@ header .container div.form{
 }
 /*end video*/
 /* About */
-
+.About .container{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.About .container img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+}
 /* end About */
+/* stats */
+.status{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-image: url("../images/background/b1.jpg");
+  background-size: cover;
+  position: relative;
+}
+.status .container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.status .container .box{
+  color: white;
+  padding: 50px;
+  background-color: var(--decond-color);
+}
+.status .container .box i{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+.status .container .box .number{
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+.status .container .box p{
+  font-size: 14px;
+}
+/* end stats */
+/* skills */
+.skills{
+  padding: 100px 0;  
+}
+.skills .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills .container > div{
+  flex-basis: 45%;
+}
+.skills .container > div > h3{
+  margin: 0 0 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.skills .container > div > p{
+  color: #777;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.skills .test .content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.skills .test .content img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.skills .test .text{
+  line-height: 2;
+  border-bottom: 1px solid #ccc;
+}
+.skills .test .text p{
+  color: #777;
+  text-align: right;
+  font-size: 14px;
+}
+.skills .test .bollet{
+  position: relative;
+  margin: 10px auto;
+  left: 50%;
+  bottom: 0px;
+  display: flex;
+  list-style: none;
+}
+.skills .test .bollet li{
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 3px;
+}
+.skills .test .bollet li.active{
+  background-color: var(--main-color);
+}
+.skills .skil .prog-holder{
+  margin-bottom: 40px;
+}
+.skills .skil .prog-holder h4{
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.skills .skil .prog-holder .prog{
+  background-color: #eee;
+  height: 30px;
+}
+.skills .skil .prog-holder .prog span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+}
+.skills .skil .prog-holder .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: -40px;
+  right: -18px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+.skills .skil .prog-holder .prog span::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 9px;
+  border-color: black transparent transparent;
+  left: 97%;
+  top: -36%;
+}
+/* end skills */
+/* quote */
+.quote{
+  margin-bottom: 100px;
+  padding: 100px 0;
+  background-image: url(../images/background/forest_1280x720.jpg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.quote q{
+font-size: 30px;
+font-weight: bolder; 
+margin-bottom: 20px;
+display: block;
+}
+/* end quote */
+/* pricing */
+.pricing{
+  padding: 100px 0;
+}
+.pricing .plans{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pricing .plans .plan{
+  flex-basis: 20%;
+  text-align: center;
+}
+.pricing .plans .plan ul{
+  list-style: none;
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan ul li{
+  padding: 20px;
+  position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-color: var(--main-color);
+}
+.pricing .plans .plan .head{
+  padding: 40px 20px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan .head h3{
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.pricing .plans .plan .head span{
+  font-size: 60px;
+  font-weight: bold;
+}
+.pricing .plans .plan .head span::before {
+  content: "$";
+  font-size: 25px;
+  font-weight: normal;
+  position: relative;
+  top: -40px;
+  margin-right: 15px;
+}
+.pricing .plans .plan .head span::after {
+  content: "/MO";
+  font-size: 25px;
+  position: relative;
+  right: -15px;
+}
+.pricing .plans .plan .foot a{
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  border: 1px solid var(--main-color);
+  width: fit-content;
+  margin: 30px auto;
+  color: black;
+}
+.pricing .contact-text{
+  text-align: center;
+  margin: 50px auto 10px;
+  font-size: 20px;
+}
+.pricing .contact-link{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* end pricing */
+/* sub */
+.subs{
+  margin-bottom: 100px;
+  padding: 100px 0;
+  background-image: url("../images/background/planet-desk_1280x720.jpg");
+  background-size: cover;
+  color: white;
+}
+.subs .container {
+  display: flex;
+  align-items: center;
+}
+.subs form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+.subs form i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+}
+.subs form input[type="email"] {
+  border: 1px solid white;
+  border-right: none;
+  background: none;
+  padding: 20px 20px 20px 60px;
+  caret-color: var(--main-color);
+  width: calc(100% - 130px);
+}
+.subs form input[type="submit"] {
+  width: 130px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-left: none;
+  text-transform: uppercase;
+}
+.subs form input[type="email"]:focus,
+.subs form input[type="submit"]:focus {
+  outline: none;
+}
+.subs form ::placeholder {
+  color: white;
+}
+.subs p {
+  line-height: 2;
+  margin-left: 50px;
+}
+/* end subs */
+/* contact us */
+.contact{
+  padding: 100px 0;
+}
+.contact .container .content{
+  display: flex;
+  justify-content: space-between;
+}
+.contact .content form {
+  flex-basis: 70%;
+}
+.contact .content form .main-input {
+  padding: 20px;
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.contact .content form .main-input:focus {
+  outline: none;
+}
+.contact .content form textarea.main-input {
+  height: 200px;
+}
+.contact .content form input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact .content .info {
+flex-basis: 25%;
+}
+.contact .content .info h4 {
+text-transform: uppercase;
+margin-bottom: 30px;
+font-weight: 500;
+font-size: 18px;
+}
+.contact .content .info .phone {
+display: block;
+color: #777;
+margin-bottom: 10px;
+}
+.contact .content .info h4:nth-of-type(2) {
+margin-top: 90px;
+}
+.contact .content address {
+color: #777;
+line-height 2;
+}
+/* end contact us */
+
+/* footer*/
+.footer{
+  padding: 100px 0 50px 0;
+  background-image: url("../images/background/menhir-station_1280x720.jpg");
+  background-size: cover;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.footer img{
+  margin-bottom: 20px;
+}
+.footer p:not(.copyright) {
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  font-size: 22px;
+  width: fit-content;
+  margin: 20px auto;
+}
+.footer .container .social-icons i {
+  padding:10px 15px;
+}
+.footer .copyright{
+  margin-top: 60px;
+}
+.footer .copyright span{
+  font-weight: bold;
+  color: var(--main-color);
+}
 /*****************************************/
 /* responsive section */
 @media (max-width: 425px) {
@@ -424,6 +815,54 @@ header .container div.form{
 }
 .video::before {
   height: 98% !important;
+}
+.About .container {
+  height: 400px;
+}
+.About .container img{
+  bottom: -80px;
+  left: 47%;
+}
+.skills .container{
+  display: block;
+}
+.skills .test .content {
+  flex-direction: column;
+  text-align: center;
+}
+.skills .test .content img{
+  margin: 0 auto 10px auto;
+  position: relative;
+}
+.skills .test .bollet{
+  margin: 0 0 10px 42%;
+  left: 0;
+}
+.pricing .plans{
+  flex-direction: column;
+}
+.pricing .plans .plan .head{
+  border-top: none;
+}
+.subs .container {
+  flex-direction: column;
+  text-align: center;
+}
+.subs p {
+    margin: 30px 0 0;
+  }
+  .contact .container .content{
+    flex-direction: column;
+  }
+  .contact .content .info {
+    order: -1;
+    text-align: center;
+  }
+  .contact .content .info h4:nth-of-type(2) {
+  margin-top: 30px;
+}
+.contact .content address {
+margin-bottom: 20px;
 }
 }
 /****************************************************/
@@ -464,6 +903,16 @@ header .container div.form{
 .video::before {
   height: 99%;
 }
+.status .container .box{
+  flex-basis: 100%;
+  border-bottom: 2px groove;
+}
+.pricing .plans{
+  flex-direction: column;
+}
+.pricing .plans .plan .head{
+  border-top: none;
+}
 }
 
 /*********************************************/
@@ -485,6 +934,9 @@ header .container div.form{
 .video::before {
   height: 99.5%;
 }
+.status .container .box{
+  flex-basis: 50%;
+}
 }
 
 /*****************************************/
@@ -492,6 +944,12 @@ header .container div.form{
   .portfolio .imgs-container .box img{
   width: 360px;   
   height: 192px; 
+}
+.status .container .box{
+  flex-basis: 25%;
+}
+.status .container > div{
+  flex-basis: 45%;
 }
 }
 
